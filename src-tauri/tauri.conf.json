@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Controle de Caixa",
+  "version": "0.1.0",
+  "identifier": "com.controle.caixa",
+
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Controle de Caixa",
+        "width": 1280,
+        "height": 800,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.ico"]
+  },
+
+  "plugins": {
+    "updater": {
+      "active": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDlERDg2RjhGODFGM0U1QTUKUldTbDVmT0JqMi9ZblU1VHZLYzNMWHk2czlKYkJORXBKYUpsZWlJKzNXUTNWR3ZpTUhZNS9rbVQK",
+      "endpoints": [
+        "https://github.com/SEU_USUARIO/SEU_REPO/releases/latest/download/latest.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+# ======================
+# Node / Vite
+# ======================
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======================
+# Rust / Cargo / Tauri
+# ======================
+src-tauri/target/
+**/*.rs.bk
+
+# ======================
+# Tauri keys (NUNCA versionar)
+# ======================
+*.key
+*.pem
+*.pfx
+*.p12
+*.keystore
+
+# ======================
+# OS / Editor
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Env
+# ======================
+.env
+.env.local
+.env.*.local
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+!.vscode/extensions.json
+
+# ======================
+# Logs
+# ======================
+*.log
