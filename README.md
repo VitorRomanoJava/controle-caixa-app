@@ -1,4 +1,4 @@
-Controle de Caixa
+<h1>Controle de Caixa</h1>
 
 Aplicação para controle de fluxo de caixa desenvolvida com foco em simplicidade, organização e rapidez no registro de entradas e saídas financeiras.
 
