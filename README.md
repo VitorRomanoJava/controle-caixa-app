@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+Controle de Caixa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação para controle de fluxo de caixa desenvolvida com foco em simplicidade, organização e rapidez no registro de entradas e saídas financeiras.
 
-Currently, two official plugins are available:
+O projeto surgiu da necessidade de ter uma ferramenta leve para acompanhar movimentações financeiras mensais sem depender de sistemas complexos ou planilhas desorganizadas. Além da utilidade prática, ele também faz parte da minha evolução como desenvolvedor, explorando tecnologias modernas do ecossistema web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação pode rodar tanto no navegador quanto como aplicativo desktop.
 
-## React Compiler
+Tecnologias;
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend
+HTML5
+CSS3
+TypeScript
+React
+Vite
+TailwindCSS
 
-## Expanding the ESLint configuration
+Backend / Serviços
+Supabase (autenticação)
+PostgreSQL
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Desktop
+Tauri
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Ferramentas de desenvolvimento
+Node.js
+npm
+Git
+GitHub
+VS Code
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Conceito do projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A ideia do Controle de Caixa é oferecer uma visão clara da situação financeira do mês, permitindo registrar movimentações e acompanhar o saldo de forma simples.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O sistema foi pensado para uso pessoal ou para pequenos negócios que precisam de controle financeiro rápido no dia a dia.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Entre as funcionalidades principais:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Registro de entradas
+Registro de saídas
+Visualização do saldo do mês
+Metas financeiras
+Sistema de notificações
+Cofrinhos para objetivos financeiros
+
+A interface segue um modelo de painel administrativo, priorizando clareza e organização das informações.
+
+Estrutura da aplicação
+
+A aplicação utiliza um layout fixo de painel com três partes principais.
+
+Sidebar
+Menu lateral responsável pela navegação entre os módulos do sistema.
+
+Topbar
+Área superior com ações rápidas e informações do usuário.
+
+Área de conteúdo
+Onde ficam as páginas do sistema.
+
+Módulos do sistema
+
+Fluxo
+Visão geral do caixa do mês e saldo atual.
+
+Entradas
+Cadastro e listagem de receitas.
+
+Saídas
+Registro e acompanhamento de despesas.
+
+Relatórios
+Visualização consolidada das movimentações.
+
+Metas
+Definição de metas financeiras mensais.
+
+Notificações
+Alertas baseados nas movimentações do mês.
+
+Perfil
+Informações do usuário.
+
+Configurações
+Ajustes gerais da aplicação.
+
+Cofrinhos
+Sistema de objetivos financeiros separados por finalidade.
