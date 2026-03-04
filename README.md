@@ -87,5 +87,4 @@ O projeto faz parte da minha evolução no desenvolvimento de aplicações moder
 
 <p>
 <strong>Vitor Romano</strong><br>
-Desenvolvedor web focado na criação de softwares, sistemas e plataformas SaaS.
 </p>
